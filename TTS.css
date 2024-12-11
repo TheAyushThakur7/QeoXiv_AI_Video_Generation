@@ -1,0 +1,87 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background similar to main page */
+    color: #fff; /* White text color for contrast */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #222; /* Dark background for the container */
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem; /* Larger font size */
+    color: #007bff; /* Blue color for headings to match main theme */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+p {
+    font-size: 1.2rem;
+    color: #aaa; /* Lighter gray text for body */
+    margin-bottom: 20px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background for textarea */
+    color: #fff; /* White text for textarea */
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff; /* Blue background matching the main page */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Audio Container Styling */
+#audio-container {
+    margin-top: 20px;
+    background-color: #222; /* Same dark background for the audio section */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Audio Player Styling */
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px; /* Rounded corners for audio controls */
+    background-color: #333; /* Dark background for the audio controls */
+}

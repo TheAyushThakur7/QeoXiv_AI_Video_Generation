@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Converter</title>
+    <link rel="stylesheet" href="TTS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QeoXiv<br>Text-to-Speech Converter</h1>
+        <p>Enter text below and click "Convert to Speech" to hear it.</p>
+
+        <form id="tts-form">
+            <textarea id="text-input" placeholder="Type something..." required></textarea>
+            <button type="submit">Convert to Speech</button>
+        </form>
+
+        <div id="audio-container">
+            <h2>Audio Output:</h2>
+            <audio id="audio-output" controls></audio>
+        </div>
+    </div>
+
+    <script src="TTS.js"></script>
+</body>
+</html>
