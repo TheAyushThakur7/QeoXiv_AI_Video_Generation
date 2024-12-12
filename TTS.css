@@ -1,4 +1,4 @@
-/* General Styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +6,9 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background similar to main page */
-    color: #fff; /* White text color for contrast */
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background: #121212; /* Dark background */
+    color: #fff; /* White text for readability */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,71 +16,83 @@ body {
 }
 
 .container {
-    background: #222; /* Dark background for the container */
-    padding: 40px;
-    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    max-width: 500px;
-    width: 100%;
+    background: #1f1f1f; /* Matching dark container background */
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Heading Style */
 h1 {
-    font-size: 2.5rem; /* Larger font size */
-    color: #007bff; /* Blue color for headings to match main theme */
-    margin-bottom: 20px;
+    font-size: 2.3em;
+    font-weight: 600;
+    color: #ff7e5f; /* Accent color for heading */
+    margin-bottom: 15px;
 }
 
-/* Paragraph Style */
 p {
-    font-size: 1.2rem;
-    color: #aaa; /* Lighter gray text for body */
-    margin-bottom: 20px;
+    color: #ccc; /* Lighter text color */
+    font-size: 1.1em;
+    margin-bottom: 30px;
 }
 
-/* Textarea Styling */
-textarea {
+form textarea {
     width: 100%;
-    height: 100px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    height: 120px;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ff7e5f; /* Accent color for input */
+    border-radius: 15px;
+    outline: none;
     background-color: #333; /* Dark background for textarea */
-    color: #fff; /* White text for textarea */
+    color: #fff;
+    resize: none;
+    margin-bottom: 20px;
 }
 
-/* Button Styling */
-button {
-    background-color: #007bff; /* Blue background matching the main page */
+form button {
+    padding: 12px 25px;
+    font-size: 1em;
+    background: #ff7e5f; /* Button background color */
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #0056b3; /* Darker blue for hover effect */
+form button:hover {
+    background: #feb47b; /* Lighter accent on hover */
+    transform: scale(1.05);
 }
 
-/* Audio Container Styling */
 #audio-container {
-    margin-top: 20px;
-    background-color: #222; /* Same dark background for the audio section */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333; /* Matching background for result section */
+    border-radius: 15px;
+    border: 1px solid #444;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
-/* Audio Player Styling */
 audio {
     width: 100%;
     margin-top: 10px;
-    border-radius: 5px; /* Rounded corners for audio controls */
-    background-color: #333; /* Dark background for the audio controls */
+    background-color: #222; /* Dark background for audio */
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
